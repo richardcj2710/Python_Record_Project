@@ -12,7 +12,7 @@ def on_hotkey(event):
   if event.name == 'esc' and keyboard.is_pressed('ctrl') and keyboard.is_pressed('alt'):
     print("Exiting...")
     exit_program = True
-    
+  # press ctrl + alt + esc is exit the program
 keyboard.on_press(on_hotkey)
 
 while not exit_program:
